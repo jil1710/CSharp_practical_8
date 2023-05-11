@@ -1,0 +1,15 @@
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.csproj.AssemblyReference.cache
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.AssemblyInfoInputs.cache
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.AssemblyInfo.cs
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.csproj.CoreCompileInputs.cache
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\bin\Debug\net7.0\CSharp_practical_8.exe
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\bin\Debug\net7.0\CSharp_practical_8.deps.json
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\bin\Debug\net7.0\CSharp_practical_8.runtimeconfig.json
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\bin\Debug\net7.0\CSharp_practical_8.dll
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\bin\Debug\net7.0\CSharp_practical_8.pdb
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.dll
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\refint\CSharp_practical_8.dll
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.pdb
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\CSharp_practical_8.genruntimeconfig.cache
+C:\Users\jil\source\repos\CSharp_practical_8\CSharp_practical_8\obj\Debug\net7.0\ref\CSharp_practical_8.dll
