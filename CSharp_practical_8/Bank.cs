@@ -57,7 +57,7 @@ namespace CSharp_practical_8
 
             if (bankaccount != null)
             {
-                CardDetail cardDetail = new CardDetail() { CardNumber = accnum, CVV = new Random().Next(100,999) };
+                CardDetail cardDetail = new CardDetail() { CardNumber = accnum, CVV = new Random().Next(100, 999) };
                 bankaccount.CardDetails = cardDetail;
                 bankaccount.HasATMCard = true;
                 return true;
@@ -71,6 +71,32 @@ namespace CSharp_practical_8
             throw new NotImplementedException();
         }
 
+        public void CalculateInterest(long accountNumber, double balance)
+        {
+            BankAccount? data = DBContext.db.FirstOrDefault(e => e.AccountNumber == accountNumber);
+            if (data != null)
+            {
+                DateTime dateTime = data.CreateAt.AddYears(1);
+                if (dateTime.Year - DateTime.Now.Year == 0)
+                {
+                    balance *= 2.7;
+                    data.BankBalance = balance;
+                }
+            }
+        }
+        public void CalculateInterest(long accountNumber)
+        {
+            BankAccount? data = DBContext.db.FirstOrDefault(e => e.AccountNumber == accountNumber);
+            if (data != null)
+            {
+                DateTime dateTime = data.CreateAt.AddYears(1);
+                if (dateTime.Year - DateTime.Now.Year == 0)
+                {
 
+                    data.BankBalance *= 4.7;
+
+                }
+            }
+        }
     }
 }

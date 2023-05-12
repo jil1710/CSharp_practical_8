@@ -38,12 +38,14 @@ namespace CSharp_practical_8.UI
                     long phone = Convert.ToInt64(Console.ReadLine()!);
                     Console.Write(" Enter Your Branch Name : ");
                     string branchname = Console.ReadLine()!;
+                    Console.Write(" Select Your Account Type [ 1. Saving | 2. FD ] : ");
+                    int opt = Convert.ToInt32(Console.ReadLine()!);
                     Console.Write(" Enter Your Access Key : ");
                     string accesskey = Console.ReadLine()!;
                     Console.ForegroundColor= ConsoleColor.Green;
                     Console.WriteLine("\n Please Wait We are creating Your Account ......................");
                     Thread.Sleep(2000);
-                    bool isCreated = bank.CreateAccount(new BankAccount() { AccessKey = accesskey, AccountHolderName = name, AccountNumber = accNumber, BankName = bankname, BranchName = branchname, CustomerPhoneNumber = phone });
+                    bool isCreated = bank.CreateAccount(new BankAccount() { AccountType = (opt == 1) ? BankAccount.ACC_TYPE.SAVING : BankAccount.ACC_TYPE.FIXED_DEPOSITE ,AccessKey = accesskey, AccountHolderName = name, AccountNumber = accNumber, BankName = bankname, BranchName = branchname, CustomerPhoneNumber = phone });
                     if (isCreated)
                     {
                         Console.WriteLine($"\n Welcome Your Account is SuccessFully Created In {bankname} and Your Account Number is {accNumber}");

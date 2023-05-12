@@ -55,10 +55,18 @@ namespace CSharp_practical_8.UI
                         Console.Write("\n Enter Amount to Deposite Into Your Account :  ");
                         long cash1 = Convert.ToInt64(Console.ReadLine());
                         detail!.BankBalance += cash1;
+                        if(detail.AccountType == BankAccount.ACC_TYPE.SAVING)
+                        {
+                            bankDetail.CalculateInterest(acc,(double)detail.BankBalance!);
+                        }
+                        else
+                        {
+                            bankDetail.CalculateInterest(acc);
+                        }
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine(" Please wait ......");
                         Thread.Sleep(2000);
-                        Console.WriteLine($" Amount {cash1} is successfully added in account {acc} and Your current balance is {detail.BankBalance} ...");
+                        Console.WriteLine($" Amount {cash1} is successfully added in account {acc} and Your current balance is {detail.BankBalance} by 2.7% Interest ...");
                         break;
                     case 4:
                         Console.Write("\n Are You Sure You Want To Delete Your Account ... [y | n] : ");

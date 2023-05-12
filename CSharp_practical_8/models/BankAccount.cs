@@ -18,5 +18,13 @@ namespace CSharp_practical_8.models
         public CardDetail? CardDetails { get; set; }   
         public string? BranchName { get; set; }
         public bool HasATMCard { get; set; } = false;
+        public DateTime CreateAt { get; set; } = DateTime.Now;
+        public ACC_TYPE AccountType { get; set; }
+
+        public enum ACC_TYPE
+        {
+            SAVING = 1,
+            FIXED_DEPOSITE
+        }
     }
 }
