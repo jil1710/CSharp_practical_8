@@ -24,7 +24,7 @@ namespace CSharp_practical_8
 
         public override BankAccount GetAccountDetails(long bankAccount)
         {
-            return DBContext.db.FirstOrDefault(e => e.AccountNumber == bankAccount);
+            return DBContext.db.FirstOrDefault(e => e.AccountNumber == bankAccount)!;
         }
     }
 }

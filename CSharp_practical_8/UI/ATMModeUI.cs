@@ -19,8 +19,24 @@ namespace CSharp_practical_8.UI
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("\n ======================== Welcome To ATM Mode =======================");
 
-                Console.Write(" \n Enter or Insert Card|Number : ");
-                long accNum = Convert.ToInt64(Console.ReadLine());
+                long accNum = default;
+                bool flag;
+                do
+                {
+                    try
+                    {
+                        Console.Write(" \n Enter or Insert Card|Number : ");
+                        accNum = Convert.ToInt64(Console.ReadLine());
+                        flag = false;
+                    }catch (Exception ex)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\n " + ex.Message);
+                        flag = true;
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+
+                } while (flag);
 
                 var holdername = DBContext.db.FirstOrDefault(e => e.AccountNumber == accNum && e.HasATMCard == true);
                 if (holdername != null)
