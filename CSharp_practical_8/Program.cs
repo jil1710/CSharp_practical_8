@@ -42,14 +42,20 @@ namespace CSharp_practical_8
                         ATMModeUI.GetATMMode();
                         break;
                     default:
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Invalid Choice...");
+                        Console.ResetColor();
                         break;
                 }
-                Console.Write("\n Do you want to continue : [y|n] : ");
+                Console.ForegroundColor= ConsoleColor.Cyan;
+                Console.Write("\n Do you want to continue with other modes : [y|n] : ");
                 reset = Console.ReadKey().KeyChar;
-            } while (reset == 'y');
+                Console.ResetColor();
+            } while (reset !='n');
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\n Thank You Have A Nice Day ...");
+            Console.ResetColor();
 
 
         }
